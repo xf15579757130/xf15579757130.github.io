@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<base href="../" target="">
+<meta charset="utf-8">
+<title>博客日记_谢飞个人博客</title>
+<meta name="keywords" content="博客，个人博客日记" />
+<meta name="description" content="这里记录的是我每天的关于生活、工作学习" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="../css/base.css" rel="stylesheet">
+<script src="../js/jquery.js"></script>
+<script src="../js/nav.js"></script>
+</head>
+<body>
+<header>
+
+  <div class="touxiang"><i><img src="images/xiefei.png" alt="谢飞"></i>
+    <h2>谢飞个人博客</h2>
+    <p>一个爱好游戏、前端代码的90后站长。</p>
+  </div>
+  <p class="guanzhu">关注我<img src="images/wx.png" alt="谢飞个人微信号：xf15579757130" class="weixin"></p>
+  <!--导航栏-begin--> 
+  <nav >
+    <ul>
+ <li><a href="../index.html">网站首页</a></li>
+ <li><a href="../bokeriji/bokeriji.html">博客日记</a></li>
+ <li><a href="../suiyansuiyu/suiyansuiyu.html">碎言碎语</a></li>
+ <li><a href="../bokedaohang/bokedaohang.html">博客导航</a></li>
+ <li><a href="../wodexiangce/wodexiangce.html">我的相册</a></li>
+ <li><a href="../shijianzhou/shijianzhou.html">时间轴</a></li>
+ <li><a href="#">游戏</a></li>
+  <li><a href="../jitariji/jitariji.html">吉他日记</a></li>
+ <li><a href="#">绘画学习</a></li>
+<li><a href="../htmlstudy/htmlstudy.html">html学习</a></li>
+ <li><a href="../guanyubozhu/guanyubozhu.html">关于博主</a></li>
+ <li><a href="../liuyan/index.php">留言</a></li>
+
+    </ul>
+  </nav>
+
+   <!--导航栏-end--> 
+</header>
+<!--header end-->
+<main>
+  <p class="weizhi">您现在的位置是：<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="bokeriji/bokeriji.html">博客日记</a></p>
+  <article> 
+    
+    <!--new_blog 最新文章 begin-->
+    <div class="new_blog">
+      <ul class="blogs">
+       
+<li><a href="bokeriji/3.html" target="_blank"><i><img src="images/zaizhu.png" alt="关于网页播放器的实现"></i>
+          <h2>记录下网页播放器的实现流程和感受</h2>
+          </a>
+          <p class="blog_smalltext">今天看到别人博客首页有一个可以收纳在左侧的音乐播放器，觉得很有意识，就想试试自己能不能做一个，过程也是够坎坷的，最大问题是播放器的外观不是自己想要的，还有获取歌单列表，这个列表的获</p>
+          <p class="blog_info"><span>2021-09-26 </span><span>谢飞</span><span><a href="bokeriji.html" target="_blank">个人博客日记</a></span></p>
+</li>
+
+      </ul>
+    </div>
+    <!--new_blog 最新文章 end--> 
+   <div class="pagelist"><a title="Total record">&nbsp;<b>26</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;<a href="index_2.html">2</a>&nbsp;<a href="index_2.html">下一页</a>&nbsp;<a href="index_2.html">尾页</a></div> 
+  </article>
+  <!--article end-->
+  
+  <aside>
+<!--搜索框开始-->
+<script>
+var DOM = (document.getElementById) ? 1 : 0;
+
+ var NS4 = (document.layers) ? 1 : 0;
+
+ var IE4 = 0; if (document.all) {      IE4 = 1;      DOM = 0; }
+var win = window;    
+
+var n    = 0;
+function findIt() {     
+
+if (document.getElementById("searchstr").value != "")         
+
+findInPage(document.getElementById("searchstr").value); 
+
+}
+
+function findInPage(str) {   
+
+ var txt, i, found;
+    if (str == "")   
+
+      return false;
+    if (DOM)     {       
+
+  win.find(str, false, true);     
+
+    return true;   
+
+ }
+    if (NS4) {     
+
+    if (!win.find(str))   
+
+          while(win.find(str, false, true))             
+
+    n++;         
+
+else         
+
+    n++;
+         if (n == 0)       
+
+      alert("未找到指定内容.");   
+
+ }
+    if (IE4) {       
+
+  txt = win.document.body.createTextRange();
+         for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {  
+
+            txt.moveStart("character", 1);         
+
+    txt.moveEnd("textedit");       
+
+  }
+    if (found) {     
+
+    txt.moveStart("character", -1);  
+
+        txt.findText(str);       
+
+  txt.select();         
+
+txt.scrollIntoView();     
+
+    n++;   
+
+ }     else {     
+
+    if (n > 0) {  
+
+            n = 0;           
+
+  findInPage(str);     
+
+    }          else   
+
+          alert("未找到指定内容.");   
+
+      }   
+
+ }
+    return false;
+
+ } // --> </script>
+
+ <div class="search">
+  <input type="text" id="searchstr" name="searchstr" class="textbox" > <input type="button" value="搜索" onclick="javascript:findIt();" class="sbttn">  
+</div>
+<!--搜索框结束-->
+<!--站长推荐-begin-->
+    <div class="tuijian">
+      <h2 class="aside_title">站长推荐</h2>
+        <ul>
+
+        </ul>
+    </div>
+<!--站长推荐-begin-->
+    <div class="love">
+      <h2 class="aside_title">猜你喜欢</h2>
+    <ul>
+
+    </ul>
+    </div>
+    <!--标签云-begin-->
+    <div class="tagsclous">
+      <h2 class="aside_title">标签云</h2>
+      <ul>
+<a href="../e/tags/~tagname=女程序员&tempid=1.html" target="_blank">女程序员</a>
+<a href="http://mood.qingqingblog.com/e/tags/?tagname=%E4%BA%92%E8%81%94%E7%BD%91&tempid=1" target="_blank">互联网</a> 
+<a href="../e/tags/~tagname=自由&tempid=1.html" target="_blank">自由</a> 
+<a href="../e/tags/~tagname=底气&tempid=1.html" target="_blank">底气</a> 
+<a href="../e/tags/~tagname=忙碌生活&tempid=1.html" target="_blank">忙碌生活</a>
+<a href="../e/tags/~tagname=建站流程&tempid=1.html" target="_blank">建站流程</a>
+<a href="../e/tags/~tagname=个人网站&tempid=1.html" target="_blank">个人网站</a> 
+<a href="../e/tags/~tagname=建站初衷&tempid=1.html" target="_blank">建站初衷</a> 
+<a href="../e/tags/~tagname=个人博客&tempid=1.html" target="_blank">个人博客</a> 
+<a href="../e/tags/~tagname=草根站长&tempid=1.html" target="_blank">草根站长</a> 
+<a href="../e/tags/~tagname=618活动&tempid=1.html" target="_blank">618活动</a> 
+<a href="../e/tags/~tagname=心得&tempid=1.html" target="_blank">心得</a> 
+<a href="../e/tags/~tagname=感受&tempid=1.html" target="_blank">感受</a> 
+<a href="../e/tags/~tagname=直播&tempid=1.html" target="_blank">直播</a>
+<a href="http://mood.qingqingblog.com/e/tags/?tagname=%E9%98%BF%E9%87%8C%E4%BA%91&tempid=1" target="_blank">阿里云</a>   
+      </ul>
+    </div>
+    <!--标签云-end-->
+  </aside>
+  <!--aside end--> 
+</main>
+<!--footer-begin--> 
+<footer>
+  <p> © 2021-2022 xiefeiblog 版权所有：谢飞个人博客 </p>
+  <p><span><a href="sitamap.xml" target="_blank"></a></span><span>备案号：<a href="http://beian.miit.gov.cn">粤ICP备2021120190</a></span><span></span></p>
+  <p></p>
+</footer>
+<!--footer end-->
+
+</body>
+</html>
