@@ -24,7 +24,7 @@ footer { width: 100%; padding-bottom: 20px; margin-top: 30px; display: inline-bl
 nav { width: 100%; clear: both; height: 50px; line-height: 50px; background: #fff; overflow-x: hidden;overflow-y:hidden;margin-bottom: 20px; box-shadow: rgba(0,0,0,.1) 3px 5px 5px; }/*阴影 颜色透明度，左右，上下，大小*/
 nav ul { text-align: center; font-size: 0;overflow-x: hidden;overflow-y:hidden; }
 nav ul li { display: inline-block; font-size: 15px; position: relative; margin: 0 3px 0 0; }
-nav ul li a { display: block; padding: 0 20px; }
+nav ul li a { display: block; padding: 0 20px;target="_self"}
 nav ul li a:before { content: ""; width: 0; height: 5px; top: 0; left: 0; position: absolute; transition: .5s; }
 nav ul li a:hover:before, nav ul li.current a:before { width: 100%; background: #af0f09; }
 nav ul li a:hover, nav ul li.current a { background: #e01109; color: #fff; }
