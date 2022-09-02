@@ -1,3 +1,16 @@
 @charset "utf-8";
 article-xiaoshuo {  width:100%;float: left;font:16px;}
 article-xiaoshuo ul li{text-align:center;height:50px;line-height:50px; margin:auto auto; border-bottom:1px solid #a88462;font: 16px ;background-color: rgb(245, 241, 231);)
+
+.blogsitetj li a { color:#222  }
+.blogsitetj li:hover { background: #edd1d8 }
+.blogsite li { float: left; width: 24%; text-align: center; line-height:30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }
+.blogsite li:before, .blogsite li:after { content: ''; position: absolute; top: 0; right: 0; height: 2px; width: 0; background: #333; transition: 400ms ease all; }
+.blogsite li:after { right: inherit; top: inherit; left: 0; bottom: 0; }
+.blogsite li:hover:before, .blogsite li:hover:after { width: 100%; transition: 800ms ease all; }
+
+.ikj li { float:right; width: 50%; text-align: center; line-height:30px; background: red; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }
+.ikj li:before, .blogsite li:after { content: ''; position: absolute; top: 0; right: 0; height: 2px; width: 0; background: #333; transition: 400ms ease all; }
+.ikj li:after { right: inherit; top: inherit; left: 0; bottom: 0; }
+.ikj li:hover:before, .blogsite li:hover:after { width: 100%; transition: 800ms ease all; }
+
