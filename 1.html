@@ -1,35 +1,32 @@
-<!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 <title>网页音乐播放器的实现_谢飞个人博客</title>
 <meta name="keywords" content="网页,音乐,播放器,谢飞,个人博客" />
 <meta name="description" content="今天看到别人博客首页有一个可以收纳在左侧的音乐播放器，觉得很有意识，就想试试自己能不能做一个，过程也是够坎坷的，最大问题是播放器的外观不是自己想要的，还有获取歌单列表，这个列表的获" />
-<link href="../../css/base.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<script src="../../js/jquery.js"></script>
-<script src="../../js/nav.js"></script>
-<style>
-	.wrapper {position: relative;}
+	<!--复制文本框内容-->	
+ 
 
-  #input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
-</style>
-</head>
+<script src="js/jquery.js"></script>
+<script src="js/nav.js"></script>
+		<style>
+		</style>
+	</head>
 <body>
-	
+	<header>
 
-
-<header>
-
-  <div class="touxiang"><i><img src="../../images/xiefei.png" alt="谢飞"></i>
+  <div class="touxiang"><i><img src="images/xiefei.png" alt="谢飞"></i>
     <h2>谢飞个人博客</h2>
     <p>一个爱好游戏、前端代码的90后站长。</p>
   </div>
-  <p class="guanzhu">关注我<img src="../../images/wx.png" alt="谢飞个人微信号：xf15579757130" class="weixin"></p>
+  <p class="guanzhu">关注我<img src="images/wx.png" alt="谢飞个人微信号：xf15579757130" class="weixin"></p>
   <!--导航栏-begin--> 
   <nav >
        <ul>
 <li><a href="../index.html">网站首页</a></li>
+		
  <li><a href="../bokeriji/bokeriji.html">博客日记</a></li>
  <li><a href="../suiyansuiyu/suiyansuiyu.html">碎言碎语</a></li>
  <li><a href="../bokedaohang/bokedaohang.html">博客导航</a></li>
@@ -52,7 +49,16 @@
   <article> 
   
 <div class="container">
-     <h1>常用注释</h1>
+	 <script type="text/javascript">
+        function copy() {
+            var e = document.getElementById("copy");
+            e.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            alert("复制成功！");
+        }
+</script>
+	
+  <h1 >常用注释</h1> 
      <p class="blog_info"><span>2021-09-28 22:44:14</span>
      <span>谢飞</span><span><a href="bokeriji.html" target="_blank">html学习</a></span>
      </p>
@@ -63,14 +69,13 @@
       <a href="../e/tags/~tagname=感受&tempid=1.html" target="_blank">注释</a>
       <a href="../e/tags/~tagname=感受&tempid=1.html" target="_blank">JavaScript</a>
 </div>
-
-
-     <div class="content">
+      
+     <div class="content" >
          <h2>html注释</h2>
 <pre>
     &lt--html页面中不显示注释内容--&gt
 </pre>
-
+<p>
 <h2>Css注释</h2>
 </p>
  <pre>     /*解释css样式说明*/</pre>
@@ -102,7 +107,7 @@
     
   </article>
   <!--article end-->
-
+  
   <aside>
     <!--搜索框开始-->
 <script>
@@ -216,19 +221,20 @@ txt.scrollIntoView();
     </div>
   </aside>
   <!--aside end--> 
-	  	
 </main>
 <script type="text/javascript" src="../脚本/点击图片放大/src/zooming.js"></script>
-<!--复制网页的代码-->
-
-
+<script type="text/javascript" src="js/copy.js"></script>
 <footer>
   <p> © 2021-2022 xiefeiblog 版权所有：谢飞个人博客 </p>
   <p><span><a href="sitamap.xml" target="_blank"></a></span><span>备案号：<a href="http://beian.miit.gov.cn">粤ICP备2021120190</a></span><span></span></p>
   <p></p>
 </footer>
 <!--footer end-->
-
+	
+	
 </body>
-</html>
-
+	
+	
+	
+	
+	</html>
