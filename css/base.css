@@ -260,6 +260,7 @@ footer { width: 100%; padding-bottom: 20px; margin-top: 30px; display: inline-bl
 .touxiang h2 { margin: 5px 0 }
 .guanzhu { float: right; background: #e01109; color: #fff; width: 120px; line-height: 30px; text-align: center; border-radius: 3px; position: relative; top: 10px; right: 0; cursor: pointer; }
 .weixin { display: none; position: absolute; width: 120px; }
+.blog_info span { height: 50px; margin-right: 15px; position: relative; padding-left: 20px; line-height: 20px; font-weight: normal;text-indent: 0em;}
 .guanzhu:hover .weixin { display: block; z-index: 9; }
 nav { width: 100%; height: 50px; line-height: 50px; overflow-x: scroll ;overflow-y:hidden;margin-bottom: 10px;  }/*阴影 颜色透明度，左右，上下，大小*/
 nav ul { text-align: center;width: max-content; overflow-x: scroll  }
