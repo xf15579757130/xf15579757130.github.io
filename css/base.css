@@ -199,7 +199,8 @@ top:0px;
 .aside_right ol li { }
 /*container*/
 .container { background: #fff; padding: 20px;}
-.container h1 { font-size: 22px; margin-bottom: 20px;;}
+.container h1 { font-size: 22px; margin-bottom: 20px;}
+.container .containerxiaoshuotext h1{ font-size: 22px; margin-bottom: 20px;text-align: center;}
 .container .blog_info { margin-bottom: 20px; }
 .tags { margin-bottom: 20px; }
 .tags a { display: inline-block; background: #e01109; color: #fff; padding: 3px 10px; }
