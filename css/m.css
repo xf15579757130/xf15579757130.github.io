@@ -48,7 +48,7 @@ nav li{ width:20%}
 @media only screen and (max-width: 479px) {
 	.title{width: 0}
 	.tiele span{width: 0}
-	.blogsite li{float: left;width: 167px;text-align: center; line-height: 30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }	
+	.blogsite li{float: left;width: 143px;text-align: center; line-height: 30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }	
 header,article{ width:96%; margin:auto;overflow: hidden}
 .logo{ 
 width: 100%;
