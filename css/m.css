@@ -1,14 +1,26 @@
-@charset "gb2312";
+@charset "utf-8";
+
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
 header{ width:96%; margin:auto}
 }
 @media screen and (min-width: 960px) and (max-width: 1023px) {
+.logo{ 
+width: 100%;
+margin: auto;
+overflow: hidden;
+text-align:center}
 header,article{ width:96%; margin:auto}
 .picbox ul{    width: 23%;}
 .picshowlist{ display:none}
 .tuijian,.guanzhu{ width:270px; }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) {
+	.blogsite li{float: left;width: 398px;text-align: center; line-height: 30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }	
+.logo{ 
+width: 100%;
+margin: auto;
+overflow: hidden;
+text-align:center}
 header,article{ width:96%; margin:auto}
 .picbox ul{    width: 23%;}
 .picshowlist{ display:none}
@@ -16,7 +28,11 @@ header,article{ width:96%; margin:auto}
 }
  @media only screen and (min-width: 480px) and (max-width: 767px) {
 header,article{ width:96%; margin:auto}
-.logo{  width:100%;text-align:center}
+.logo{ 
+width: 100%;
+margin: auto;
+overflow: hidden;
+text-align:center}
 nav{ width:100%}
 nav li{ width:20%}
 .l_box{ display:none}
@@ -28,9 +44,17 @@ nav li{ width:20%}
 .picshowlist{ display:none}
 .lmname,.view{ display:none}
 }
+/*下面是荣耀100pro*/
 @media only screen and (max-width: 479px) {
-header,article{ width:96%; margin:auto}
-.logo{  width:100%;text-align:center}
+	.title{width: 0}
+	.tiele span{width: 0}
+	.blogsite li{float: left;width: 167px;text-align: center; line-height: 30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }	
+header,article{ width:96%; margin:auto;overflow: hidden}
+.logo{ 
+width: 100%;
+margin: auto;
+overflow: hidden;
+text-align:center}
 nav{ width:100%}
 .l_box{ display:none}
 .r_box,.infosbox,.picsbox{ width:100%}
